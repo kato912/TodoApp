@@ -42,13 +42,13 @@ class MainWindow(QWidget):
         #del
         dell = QHBoxLayout()
         
-        clear_btn = QPushButton("clear")
-        clear_btn.clicked.connect(self.remove_todo)
+        Remove_btn = QPushButton("Remove")
+        Remove_btn.clicked.connect(self.remove_todo)
         
         clear_all_btu = QPushButton("clear all")
         clear_all_btu.clicked.connect(self.clearAll_todo)
         
-        dell.addWidget(clear_btn)
+        dell.addWidget(Remove_btn)
         dell.addWidget(clear_all_btu)
         main_layout.addLayout(dell)
         #setlayout
